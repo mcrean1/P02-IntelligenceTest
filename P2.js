@@ -3,7 +3,7 @@
 function puzzle1()
 { var answer = document.getElementById("p1").value;
 
-  if(answer == 729)
+  if(answer == 1458)
   {
    document.getElementById("work").innerHTML = "Awesome! You're correct!";
    document.getElementById("work").classList.remove("hidden-message");
@@ -11,14 +11,14 @@ function puzzle1()
     setCookie("prescore3", 1, 100);
   }
 
-  else if(answer < 729)
+  else if(answer < 1458)
   {
    document.getElementById("work").innerHTML = "Almost! Try Again.";
    document.getElementById("work").classList.remove("hidden-message");
    document.getElementById("work").classList.add("shown-message");
   }
 
-  else if(answer > 729)
+  else if(answer > 1458)
   {
    document.getElementById("work").innerHTML = "Close, but not quite.";
    document.getElementById("work").classList.remove("hidden-message");
